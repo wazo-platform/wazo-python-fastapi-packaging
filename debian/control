@@ -14,13 +14,17 @@ Package: python3-fastapi
 Architecture: all
 Depends: ${misc:Depends},
          ${python3:Depends},
+         python3-starlette,
+         python3-pydantic,
+         python3-requests,
          python3-aiofiles,
-         python3-graphene,
-         python3-itsdangerous,
          python3-jinja2,
          python3-multipart,
+         python3-itsdangerous,
          python3-yaml,
-         python3-requests,
+         python3-graphene,
          python3-ujson,
-Description: The little ASGI library that shines.
+         python3-email-validator,
+         python3-uvicorn,
+Description: FastAPI framework, high performance, easy to learn, fast to code, ready for production
  .
