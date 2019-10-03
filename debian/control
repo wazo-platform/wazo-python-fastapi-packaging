@@ -1,0 +1,26 @@
+Source: wazo-python-fastapi-packaging
+Section: python
+Priority: optional
+Maintainer: Wazo Maintainers <dev+pkg@wazo.community>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python3-all,
+               python3-setuptools
+Standards-Version: 3.9.6
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.7
+
+Package: python3-fastapi
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-aiofiles,
+         python3-graphene,
+         python3-itsdangerous,
+         python3-jinja2,
+         python3-multipart,
+         python3-yaml,
+         python3-requests,
+         python3-ujson,
+Description: The little ASGI library that shines.
+ .

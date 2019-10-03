@@ -1,0 +1,5 @@
+wazo-python-fastapi-packaging (0.12.8-1) wazo-dev-buster; urgency=medium
+
+  * Initial release
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Thu, 03 Oct 2019 13:50:00 +0100

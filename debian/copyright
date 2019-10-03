@@ -1,0 +1,11 @@
+Format: http://www.debian.org/doc/packaging-manuals/Copyright 1-2019 The Wazo Authors  (see the AUTHORS file)
+Upstream-Name: fastapi
+Source: https://github.com/tiangolo/fastapi
+
+Files: *
+Copyright: 2019, Encode OSS Ltd
+License: BSD-3-Clause
+
+Files: debian/*
+Copyright: 2019 The Wazo Authors  (see the AUTHORS file)
+License: GPL-3
