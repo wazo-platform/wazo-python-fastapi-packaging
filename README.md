@@ -20,3 +20,8 @@ debian/rules get-orig-source
 debuild -us -uc
 ```
 The `.deb` will be located in the parent directory.
+
+For converting toml to setup.py
+
+    curl -L dephell.org/install | python3
+    dephell deps convert --from=pyproject.toml --to=setup.py
