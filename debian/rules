@@ -2,7 +2,6 @@
 
 PKG = $(word 2,$(shell dpkg-parsechangelog | grep Source))
 VERSION ?= $(shell cat VERSION)
-URL_DOWNLOAD = "https://github.com/tiangolo/fastapi/archive/${VERSION}.tar.gz"
 export PYBUILD_NAME=fastapi
 export PYBUILD_DISABLE=test
 export PYBUILD_SYSTEM=distutils
@@ -17,4 +16,5 @@ override_dh_auto_clean:
 
 get-orig-source:
 	@echo "# Downloading..."
-	wget -nv -T10 -t3 $(URL_DOWNLOAD) -O ../$(PKG)_$(VERSION).orig.tar.gz
+	URL_DOWNLOAD=$(shell wget -q -O- https://pypi.org/pypi/fastapi/json | python3 get_url.py $(VERSION)) ; \
+	wget -nv -T10 -t3 $$URL_DOWNLOAD -O ../$(PKG)_$(VERSION).orig.tar.gz
