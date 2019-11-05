@@ -2,6 +2,11 @@
 
 Debian packaging for [python3-fastapi](https://github.com/tiangolo/fastapi/) used in Wazo.
 
+## Reason
+
+* Not packaged by Debian
+* Needed by all REST API daemons
+
 ## Upgrading
 
 To upgrade python-fastapi
