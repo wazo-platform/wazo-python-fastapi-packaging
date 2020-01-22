@@ -26,5 +26,7 @@ Depends: ${misc:Depends},
          python3-ujson,
          python3-email-validator,
          python3-uvicorn,
-Description: FastAPI framework, high performance, easy to learn, fast to code, ready for production
+Description: FastAPI framework
  .
+ FastAPI is a modern, fast (high-performance), web framework for
+ building APIs with Python 3.6+ based on standard Python type hints.
