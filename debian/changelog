@@ -1,3 +1,9 @@
+wazo-python-fastapi-packaging (0.39.0-1~wazo2) wazo-dev-buster; urgency=medium
+
+  * rebuild
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Thu, 23 Jan 2020 15:02:00 +0100
+
 wazo-python-fastapi-packaging (0.39.0-1~wazo1) wazo-dev-buster; urgency=medium
 
   * Initial release
